@@ -177,7 +177,7 @@ export default function Home() {
             <h2>YAY! 🎉</h2>
             <Image
               className="fireworks"
-              src="/app/hearts.jpg"
+              src="/hearts.jpg"
               alt="Our Hearts"
               width={380}
               height={500}

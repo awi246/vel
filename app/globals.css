@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --bg1: #ffd6e7;
   --bg2: #ffeef6;
