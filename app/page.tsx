@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback, PointerEvent } from "react";
 import confetti, { CreateTypes } from "canvas-confetti";
+import Image from "next/image";
 
 export default function Home() {
   const [accepted, setAccepted] = useState(false);
@@ -141,7 +142,7 @@ export default function Home() {
       <main className="card">
         <CatWithHeart />
 
-        <h1>Nirali, will you be my Valentine?</h1>
+        <h1 className="">Madam ji, will you be my Valentine?</h1>
 
         {!accepted && (
           <>
@@ -174,11 +175,13 @@ export default function Home() {
         {accepted && (
           <section className="result">
             <h2>YAY! 🎉</h2>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               className="fireworks"
-              src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
-              alt="Fireworks"
+              src="/app/hearts.jpg"
+              alt="Our Hearts"
+              width={380}
+              height={500}
+              style={{ objectFit: "cover", borderRadius: "12px" }}
             />
           </section>
         )}
