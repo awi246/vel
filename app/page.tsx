@@ -139,7 +139,7 @@ export default function Home() {
     <>
       <canvas id="confettiCanvas" ref={canvasRef}></canvas>
 
-      <main className="card">
+      <main className="card ">
         <CatWithHeart />
 
         <h1 className="">Madam ji, will you be my Valentine?</h1>
